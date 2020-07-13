@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS DOM Events 2</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Vacation Destinations WishList</h1>
+      <p>
+        Found exciting places to visition on your next vacation? Use the form
+        below to add them to your wishlist
+      </p>
+    </header>
+    <body>
+      <div class="main">
+        <form id="dest-form" action="">
+          <div class="form-group">
+            <label for="name">Destination name</label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter the name of the destination"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input
+              class="form-control"
+              type="text"
+              name="loc"
+              id="loc"
+              placeholder="Where is it located?"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="photo">Photo</label>
+            <input
+              class="form-control"
+              type="url"
+              name="photo"
+              id="photo-url"
+              placeholder="Enter an image url of the place"
+            />
+          </div>
+          <div class="form-group">
+            <label for="desc">Description</label>
+            <input
+              class="form-control"
+              type="text"
+              name="desc"
+              id="desc"
+              placeholder="What makes this place special?"
+            />
+          </div>
+
+          <button id="submit-btn" class="btn btn-primary">
+            Add to list
+          </button>
+        </form>
+        <div class="destinations">
+          <h3>Enter destination details</h3>
+          <div class="dest-container" id="container"></div>
+        </div>
+      </div>
+    </body>
+    <script src="script.js"></script>
+  </body>
+</html>
