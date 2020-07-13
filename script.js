@@ -2,13 +2,29 @@ let submitBtn = document.getElementById("submit-btn");
 
 const modify = (e) => {
   e.preventDefault();
-  prompt;
+  let name, location;
+
+  name = prompt("Please enter a new destination name: ");
+  if (name !== "") {
+    let container = e.target.parentElement;
+    container.parentElement.getElementsByClassName(
+      "card-title"
+    )[0].innerHTML = name;
+  }
+
+  location = prompt("Please enter updated location: ");
+  if (location !== "") {
+    let container = e.target.parentElement;
+    container.parentElement.getElementsByClassName(
+      "card-text"
+    )[0].innerHTML = location;
+  }
 };
 
 const remove = (e) => {
   e.preventDefault();
-  let answer = confirm("Do you really want to delete this destination?");
-  if (answer) {
+  let confirmed = confirm("Do you really want to delete this destination?");
+  if (confirmed) {
     let container = e.target.parentElement;
     container.parentElement.remove();
   }

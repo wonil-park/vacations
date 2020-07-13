@@ -34,6 +34,15 @@ form,
   margin: 0 10px 5px;
 }
 
+.btn:hover {
+  transform: scale(1.02);
+}
+
 #delete {
   background-color: orangered;
+}
+
+#edit {
+  background-color: palegreen;
+  color: black;
 }
